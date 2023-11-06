@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <title>INGRESO DE USUARIO</title>
+</head>
+<style>
+    .alert {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Dealer Appointment Record</h1>
+            <div class="alert alert-secondary p-3 bg-primary text-center" role="alert">
+                New Appointment record +1
+            </div>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label class="mb-3" for="dealerList">Select a Dealer :</label>
+                    <select id="dealerName" name="dealerName" class="form-select">
+                        <option value="Bellevue Nissan">Bellevue Nissan</option>
+                        <option value="CDJR of Morgantown">CDJR of Morgantown</option>
+                        <option value="CDJR of Elizabethton">CDJR of Elizabethton</option>
+                        <option value="Daniels Long Chevrolet">Daniels Long Chevrolet</option>
+                        <option value="Elder Ford of Tampa">Elder Ford of Tampa</option>
+                        <option value="Chevrolet of Wesley Chapel">Chevrolet of Wesley Chapel</option>
+                        <option value="Ford of Elizabethton">Ford of Elizabethton</option>
+                        <option value="Genesis Hyundai Of North Miami">Genesis Hyundai Of North Miami</option>
+                        <option value="Granbury Nissan">Granbury Nissan</option>
+                        <option value="Grainger Nissan">Grainger Nissan</option>
+                        <option value="Grossman Chevrolet">Grossman Chevrolet</option>
+                        <option value="Grossman Nissan">Grossman Nissan</option>
+                        <option value="Hyundai of Silsbee">Hyundai of Silsbee</option>
+                        <option value="Infiniti of Elk Grove">Infiniti of Elk Grove</option>
+                        <option value="Jim Bone Kia ">Jim Bone Kia </option>
+                        <option value="Jim Bone Nissan">Jim Bone Nissan</option>
+                        <option value="Keffer Chrysler Dodge Jeep RAM">Keffer Chrysler Dodge Jeep RAM</option>
+                        <option value="Keffer Mazda">Keffer Mazda</option>
+                        <option value="Keffer Volkswagen">Keffer Volkswagen</option>
+                        <option value="Kia of Frisco">Kia of Frisco</option>
+                        <option value="Livermore">Livermore</option>
+                        <option value="Mazda Of Elk grove">Mazda Of Elk grove</option>
+                        <option value="Mazda Of Wesley Chapel">Mazda Of Wesley Chapel</option>
+                        <option value="Nissan Of Hendersonville">Nissan Of Hendersonville</option>
+                        <option value="Nissan Of Elk Grove">Nissan Of Elk Grove</option>
+                        <option value="Nissan Of Richmond">Nissan Of Richmond</option>
+                        <option value="Renton CDJR">Renton CDJR</option>
+                        <option value="Subaru of North Miami">Subaru of North Miami</option>
+                        <option value="Tenneson Nissan">Tenneson Nissan</option>
+                        <option value="Union City CDJR ">Union City CDJR </option>
+                        <option value="Steve Rayman">Steve Rayman</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">LAST NAME</label>
+                    <input type="number" class="form-control" id="lastname">
+                </div>
+                <button id="add1" name="add1" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+<script src="index.js"></script>
+
+</html>
